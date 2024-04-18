@@ -258,7 +258,7 @@ class TestDateInRegion_Create: XCTestCase {
 	@discardableResult
 	func XCTSameDateArray(_ left: [DateInRegion], _ right: [DateInRegion]) -> Bool {
 		guard left.count == right.count else { return false }
-		// swiftlint:disable for_where
+
 		for idx in 0..<left.count {
 			if left[idx] != right[idx] {
 				XCTFail("At index \(idx). Expected date = {\(left[idx].date)}, got = {\(right[idx].date)}")
